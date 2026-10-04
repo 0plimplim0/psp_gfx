@@ -22,9 +22,9 @@ void gfx_swap_bufs(void) {
   front_buff = back_buff;
   back_buff = temp;
 
-  sceDisplayWaitVblankStart();
-
   sceDisplaySetFrameBuf((void*)front_buff, SCREEN_STRIDE, current_pixel_format, PSP_DISPLAY_SETBUF_NEXTFRAME);
+
+  sceDisplayWaitVblankStart();
 }
 
 void gfx_clear_screen(unsigned int color) {

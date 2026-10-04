@@ -1,4 +1,4 @@
-TARGET = PROJ_NAME
+TARGET = psp_gfx
 
 SOURCES_C := $(wildcard *.c) $(wildcard src/*.c)
 
@@ -9,7 +9,7 @@ CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
 ASFLAGS = $(CFLAGS)
 
 EXTRA_TARGETS = EBOOT.PBP
-PSP_EBOOT_TITLE = Project Name
+PSP_EBOOT_TITLE = PSP GFX
 
 PSPSDK=$(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build.mak
