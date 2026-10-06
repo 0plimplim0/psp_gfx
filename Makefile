@@ -13,10 +13,3 @@ PSP_EBOOT_TITLE = PSP GFX
 
 PSPSDK=$(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build.mak
-
-.PHONY: clean_src
-
-clean_src:
-	rm -f src/*.o
-
-clean: clean_src
